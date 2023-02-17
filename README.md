@@ -23,13 +23,14 @@ ygopro的卡组编辑器&amp;抽卡模拟器
 -	1、在执行文件目录创建目录ygoData。
 -	2、将源码文件夹的/ExamplePic/DefaultSide.jpg图片文件复制到执行目录ygoData下。
 -	3、将ygopro发行版本的cdb和picture文件夹复制到ygoData目录中。此时执行文件目录和ygoData目录看起来是这样的
+
 ![](https://github.com/Ventery/YGODrawSimulation/blob/master/ExamplePic/%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95.jpg)
 ![](https://github.com/Ventery/YGODrawSimulation/blob/master/ExamplePic/ygoData%E7%9B%AE%E5%BD%95.jpg)
 -	4、在Qt creator中执行，或者打包后执行。
     
 ## 四、操作方式
 -	操作并不复杂，左键选中操作的卡组，通过右键添加或者删除卡片，点击按钮可以保存或者重置修改的卡组。
--	计算概率的界面，这些备选组合之间的关系是“或”的关系。如图所示，计算的41.2290%概率为左侧主卡组，起手抽到<font color= "#dd0000">圆武</font> 或者 <font color= "#dd0000">挖矿+剑指</font> 或者 <font color= "#dd0000">挖矿+墓指</font>  或者 <font color= "#dd0000">小世界+墓指</font> 或者 <font color= "#dd0000">挖矿+剑指</font>五种组合的概率。代表起手能展开且有护航防灰的概率。
+-	计算概率的界面，这些备选组合之间的关系是“或”的关系。如图所示，计算的41.2290%概率为左侧主卡组，起手抽到<font color= "#dd0000">圆武</font> 或者 <font color= "#dd0000">挖矿+剑指</font> 或者 <font color= "#dd0000">挖矿+墓指</font>  或者 <font color= "#dd0000">小世界+墓指</font> 或者 <font color= "#dd0000">小世界+剑指</font>五种组合的概率。代表起手能展开且有护航防灰的概率。
 ![](https://github.com/Ventery/YGODrawSimulation/blob/master/ExamplePic/%E7%95%8C%E9%9D%A22.jpg)
 -	概率计算其实是很复杂的，这里用抽卡100000次来模拟概率计算，对大概率事件误差比较小，对小概率事件误差比较大（例如起手五张尸块）。
 
