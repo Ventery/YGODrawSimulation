@@ -1,4 +1,4 @@
-#include "ygodrawsimulation.h"
+#include "YGODrawSimulation.h"
 
 #include <QApplication>
 #include <QLocale>
